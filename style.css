@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* HEADER START */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", serif;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.header {
+    height: 100vh;
+    border: 0px solid black;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/638e9299-0637-42d1-ba39-54ade4cf2bf6/web/IN-en-20250203-TRIFECTA-perspective_46eb8857-face-4ea6-b901-dbf22b461369_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1660px, 100vw);
+
+    position: relative;
+}
+
+.header .box {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* opacity: 0.75; */
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.75) 90%, black);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    margin: auto;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    width: 112px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    height: calc(100% - 62px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    font-family: "Martel Sans", serif;
+    /* gap: 23px; */
+    padding: 0px 30px;
+
+}
+
+.text> :first-child {
+    font-weight: 900;
+    font-size: 56px;
+    letter-spacing: -3px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-weight: 900;
+    font-size: 56px;
+    letter-spacing: -3px;
+    line-height: 70px;
+    text-align: center;
+
+
+}
+
+.text> :nth-child(3) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.text> :nth-child(5) {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+
+
+.english {
+    padding: 6px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.signin {
+    padding: 6px 12px;
+
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.text>div {
+    text-align: center;
+
+}
+
+
+.started {
+    padding: 10px 40px;
+    margin: 10px 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+
+.email {
+    padding: 15px 154px 10px 13px;
+    border-radius: 4px;
+    color: aliceblue;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    background-color: transparent;
+    font-weight: 500;
+
+}
+
+.text>div>input::placeholder {
+    color: rgba(232, 230, 230, 0.7);
+}
+
+/* HEADER END */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN START */
+
+.main {
+    /* border: 1px solid rgb(47, 170, 184); */
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trend {
+    width: 80vw;
+    height: 350px;
+    /* border: 1px solid rgb(47, 170, 184); */
+
+}
+
+.trend-box {
+    /* border: 1px solid aqua; */
+    height: 300px;
+    display: flex;
+    column-gap: 40px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+    left: 10px;
+    height: 260px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+
+
+}
+
+.more-reason {
+    width: 80vw;
+    height: 350px;
+    /* border: 1px solid rgb(15, 26, 225); */
+}
+
+.reason {
+    height: 300px;
+    /* border: 1px solid rgb(15, 26, 225); */
+    display: flex;
+
+}
+
+.reason-box {
+    /* border: 1px solid blue; */
+    border-radius: 20px;
+    height: 30vh;
+    width: 20vw;
+    margin: 10px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    padding: 15px;
+}
+
+.question {
+    width: 80vw;
+    /* height: 350px; */
+    /* border: 1px solid red; */
+}
+
+.question-section {
+    /* height: 300px; */
+    /* border: 1px solid red; */
+
+}
+
+.question-box {
+    /* border: 1px solid red; */
+    height: 80px;
+    width: 77vw;
+    margin: 10px 0;
+    background-color: rgb(45, 45, 45);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+
+}
+
+.question-box:hover {
+    background-color: rgb(65, 65, 65);
+
+}
+
+/* MAIN END */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER START */
+.footer {
+    /* border: 1px solid white; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top: 100px;
+}
+
+.footer-box {
+    /* border: 1px solid white; */
+    width: 81vw;
+    height: 124px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.footer-box>div>a {
+    color: rgb(159, 159, 159);
+}
+
+/* FOOTER END */
